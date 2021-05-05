@@ -6,7 +6,7 @@
 1. 업비트에서 OPEN API 키 값을 가져옵니다.
 2. 최상위 디렉토리 내 upbit_open_API.json 파일 내에 있는 ACCESS, SECRET 속성 값에 API 키 값을 각각 넣습니다. 
 3. 필요에 따라서는 SERVER 속성 값도 바뀔 수 있습니다. 현재 동작하는 업비트 OPEN API 서버 주소는 https://api.upbit.com 입니다.
-
+4. 최상위 디렉토리에서 터미널을 열고 npm start 명령어를 입력하여 동작시킵니다.
 ## API 호출 방법
 main.ts 내 call_exchange_API() 함수의 인자를 아래와 같이 줘서 호출하여 관련 API들을 사용합니다.
 - 1: 전체 계좌 조회
