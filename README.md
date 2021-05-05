@@ -13,13 +13,18 @@ main.ts 내 call_exchange_API() 함수의 인자를 아래와 같이 줘서 호�
 - 2: 주문 가능 정보
 
 # 현재 호출하고 있는 기능
+현재 아래 기능들을 지원하고 있으며, 관련 결과에 추가적으로 min_count, sec_count 정보가 추가되어 출력됩니다.
+해당 정보는 남은 요청수(분/초)를 의미합니다.
 ## 전체 계좌 조회
 - 사용방법: main.ts 내 call_exchange_API(1) 호출
 - 결과: 아래와 같이 전체 계좌 관련 내용들을 출력합니다.
+
+![result_account_info](https://user-images.githubusercontent.com/46051622/117143680-0bfdc680-adec-11eb-8c96-e9174c599686.PNG)
 ## 주문 가능 정보
 - 사용방법: main.ts 내 call_exchange_API(2) 호출
 - 결과: 아래와 같이 현재 주문가능한 종목(KRW-BTC) 관련 내용들을 호출합니다.
 
+![get_possible_order](https://user-images.githubusercontent.com/46051622/117143639-ff796e00-adeb-11eb-8f8f-fa928a80dbf0.PNG)
 # 추후 추가할 기능
 - 현재 거래 중인 코인 종목들의 리스트 가져오기
 - 코인 종목들의 과거 데이터 가져오기
