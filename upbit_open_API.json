@@ -1,0 +1,5 @@
+{
+    "ACCESS": "Please fill here OPEN API access key",
+    "SECRET": "Please fill here OPEN API secret key ",
+    "SERVER": "https://api.upbit.com"
+}
