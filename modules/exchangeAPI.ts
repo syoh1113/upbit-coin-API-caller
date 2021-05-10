@@ -64,7 +64,7 @@ function call_exchange_API(test_case: number) {
 
         console.log(body)
         
-        const min_sec_count:string[] = getRemainMinSecCountFromResponse(response)
+        const min_sec_count:string[] = getRemainMinSecCountFromResponse(response.headers)
 
         console.log("min_count: " + min_sec_count[0])
         console.log("sec_count: " + min_sec_count[1])

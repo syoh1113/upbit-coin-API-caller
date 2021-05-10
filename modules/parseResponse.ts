@@ -1,7 +1,8 @@
 import request from "request";
 
-function getRemainMinSecCountFromResponse(response : request.Response) {
-    const remaining_req = String(response.headers['remaining-req'])
+function getRemainMinSecCountFromResponse(response : any) {
+    const remaining_req = String(response['remaining-req'])
+
     var splitted = remaining_req.split(";")
 
     var min_count = null
