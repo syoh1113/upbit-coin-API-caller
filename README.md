@@ -279,9 +279,43 @@ sec_count: 9
   }
 ]
 ```
-# 추후 추가할 기능
-- 현재 거래 실시간 데이터 가져오기
-
+## 현재 거래 실시간 데이터 가져오기
+- 사용방법: main.ts 내 input 변수 값을 5로 설정
+- 결과: 아래와 같이 현재 거래 실시간 데이터를 가져옵니다.
+```
+min_count: 594
+sec_count: 9
+[
+  {
+    market: 'KRW-BTC',
+    trade_date: '20210511',
+    trade_time: '103739',
+    trade_date_kst: '20210511',
+    trade_time_kst: '193739',
+    trade_timestamp: 1620729459000,
+    opening_price: 70902000,
+    high_price: 71750000,
+    low_price: 68500000,
+    trade_price: 69206000,
+    prev_closing_price: 70902000,
+    change: 'FALL',
+    change_price: 1696000,
+    change_rate: 0.0239203408,
+    signed_change_price: -1696000,
+    signed_change_rate: -0.0239203408,
+    trade_volume: 0.01409834,
+    acc_trade_price: 441407575766.13275,
+    acc_trade_price_24h: 998796161034.105,
+    acc_trade_volume: 6318.78518605,
+    acc_trade_volume_24h: 14107.28875512,
+    highest_52_week_price: 81994000,
+    highest_52_week_date: '2021-04-14',
+    lowest_52_week_price: 10121000,
+    lowest_52_week_date: '2020-05-11',
+    timestamp: 1620729460163
+  }
+]
+```
 # 프로그램 응용
 - 거래 전략들을 시뮬레이션 할 수 있는 백테스팅 기능 추가
 - 다양한 거래 전략들을 적용하여 종목들의 추세 계산 기능 추가

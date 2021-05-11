@@ -10,6 +10,9 @@ function call_quotation_API(input) {
     if (input == 4) {
         url = 'https://api.upbit.com/v1/candles/minutes/1?market=KRW-BTC&count=1';
     }
+    else if (input == 5) {
+        url = 'https://api.upbit.com/v1/ticker?markets=KRW-BTC';
+    }
 
     fetch(url, options)
        .then(res => {
